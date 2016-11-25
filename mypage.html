@@ -11,7 +11,7 @@
 
 
 
-<title>Include Images</title>
+<title>mypage</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -229,28 +229,29 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Include Images</h1>
+<h1 class="title toc-ignore">mypage</h1>
 
 </div>
 
 
-<p>Including an image using <code>rmarkdown</code> is easy.</p>
-<p>In the files pane in RStudio choose <code>New Folder</code> (or create one in your Finder in the Rproject folder). Call it say <code>images</code>.</p>
-<p>To reference an image in rmarkdown use the following.</p>
-<p><code>![](images/yourimagename.png)</code></p>
-<p>Here is an example of a network visual created in <a href="https://gephi.org">Gephi</a> and saved in <code>images</code>.</p>
-<div class="figure">
-<img src="images/fig31_adjust_nodes.png" />
-
+<div id="this-is-my-page" class="section level2">
+<h2>This is my page</h2>
+<p>This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <a href="http://rmarkdown.rstudio.com" class="uri">http://rmarkdown.rstudio.com</a>.</p>
+<p>When you click the <strong>Knit</strong> button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:</p>
+<pre class="r"><code>summary(cars)</code></pre>
+<pre><code>##      speed           dist       
+##  Min.   : 4.0   Min.   :  2.00  
+##  1st Qu.:12.0   1st Qu.: 26.00  
+##  Median :15.0   Median : 36.00  
+##  Mean   :15.4   Mean   : 42.98  
+##  3rd Qu.:19.0   3rd Qu.: 56.00  
+##  Max.   :25.0   Max.   :120.00</code></pre>
 </div>
-<div id="sizing-images" class="section level2">
-<h2>Sizing images</h2>
-<p>There are a number of ways of sizing images using the <code>knitr</code> package. One of the simplest is to size images in R code chunks.</p>
-<p>To inserta code chunk use <code>Ctrl Alt I</code> on Windows or <code>Cmd I</code> on a Mac.</p>
-<p>In the code chunk heading we could specify the width of a figure as percentages and we might also want to centre the figure <code>{r out.width = &quot;50%&quot;, fig.align = &quot;center&quot;}</code>. We would then include a call to <code>knitr::include_graphics()</code> with our image address in quotes as below. Note that the knitr documentation specifies that you may need to <code>install.packages(&quot;png&quot;)</code> and <code>install.packages(&quot;jpeg&quot;)</code> for automatic calculation of the width of images.</p>
-<p>For most purposes something like this will work for a web page display.</p>
-<pre class="r"><code>knitr::include_graphics(&quot;images/fig31_adjust_nodes.png&quot;)</code></pre>
-<p><img src="images/fig31_adjust_nodes.png" width="50%" style="display: block; margin: auto;" /></p>
+<div id="including-plots" class="section level2">
+<h2>Including Plots</h2>
+<p>You can also embed plots, for example:</p>
+<p><img src="mypage_files/figure-html/pressure-1.png" width="672" /></p>
+<p>Note that the <code>echo = FALSE</code> parameter was added to the code chunk to prevent printing of the R code that generated the plot.</p>
 </div>
 
 
